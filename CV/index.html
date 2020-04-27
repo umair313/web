@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Naruto Uzumaki</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+      <div class="title">
+          <h1>Naruto Uzumaki</h1>
+      </div>
+      <div class="picture">
+          <div class="outerCircle">
+      <div class="innerCircle">
+          
+      </div>
+  </div>
+      </div>
+  </div>
+   <div class="mainbody">
+       <div class="quoteBox">
+           <div class="SingleQuote">
+              <div class="Quote">
+                   <div class="quotesTitle">
+                       <h1>My Ninja Way...</h1>
+                   </div>
+                   <div class="quotes">
+                       <p>
+                           “I’m not gonna run away, I never go back on my word! That’s my nindo: my ninja way.” Naruto
+                       </p>
+                    </div>
+                </div>
+                
+                <div class="Quote">
+                   <div class="quotesTitle">
+                       <h1>care about others</h1>
+                   </div>
+                   <div class="quotes">
+                       <p>
+                          “I care more about others than I do myself, and I won’t let anyone hurt them.” Naruto
+                       </p>
+                    </div>
+                </div>
+                
+                <div class="Quote">
+                   <div class="quotesTitle">
+                       <h1>Parent's love</h1>
+                   </div>
+                   <div class="quotes">
+                       <p>
+                          “I couldn’t understand what a parent’s love was like because you guys were never there, so I could only guess. But now I know, I live because you and Dad gave your lives for me and filled me up with love before the Nine-Tails was inside me! So here I am, happy and healthy! I’m glad I ended up being your son!” Naruto
+                       </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="memoriesbox">
+            <h1>memories</h1>
+            <div class="gallary">
+                <div class="gimage">
+                    <img id="myImg" class="img" src="Jiraiya.jpg" alt="Naruto-Jiraiya">
+                </div>
+                <div class="gimage">
+                    <img id="myImg" class="img" src="Jiraiya.jpg" alt="Naruto-Jiraiya">
+                </div>
+            </div>
+        </div>
+    </div>
+   <!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+    console.log('clicked' + this.src);
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+</body>
+</html>
